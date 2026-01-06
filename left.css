@@ -39,11 +39,9 @@ body{
   color: #ffffff;
   text-decoration: none;
 }
-
 .middle{
   margin-top: 30px;
 }
-
 .middle div{
   display: flex;
   align-items: center;
@@ -53,7 +51,6 @@ body{
   cursor: pointer;
   border-radius: 9px;
 }
-
 .middle div a{
   display: flex;
   align-items: center;
@@ -61,22 +58,18 @@ body{
   color: #ffffff;
   text-decoration: none;
 }
-
 .middle div:hover{
   background-color: #25282C;
 }
-
 .middle div a svg{
   width: 40px;
   padding-right: 15px;
 }
-
 .middle div a img{
   height: 25px;
   padding-right: 15px;
 }
-
-.bottom div{
+.left .bottom div{
   display: flex;
   align-items: center;
   margin: 5px 0;
@@ -87,7 +80,7 @@ body{
   border-radius: 9px;
 }
 
-.bottom div a{
+.left .bottom div a{
   display: flex;
   align-items: center;
   transition: background-color ease 50ms;
@@ -95,11 +88,11 @@ body{
   color: #ffffff;
 }
 
-.bottom div:hover{
+.left .bottom div:hover{
   background-color: #25282C;
 }
 
-.bottom div a svg{
+.left .bottom div a svg{
   width: 40px;
   padding-right: 15px;
 }
@@ -134,7 +127,7 @@ body{
   }
   
 }
-@media (max-width: 650px){
+@media (max-width: 730px){
   .left{
     display: none;
   }

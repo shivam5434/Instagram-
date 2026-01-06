@@ -144,18 +144,48 @@ video{
   width: 85%;
   font-size: 0.8em;
 }
+
+.center .top{
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.center .instagram{
+  font-family:Grand Hotel, cursive;
+  font-size: 1.7rem;
+}
+.center .top>:last-child{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.center .search{
+  border: none;
+  border-radius: 20px;
+  padding: 0 4px;
+  background-color: #242425;
+  height: 30px;
+  width: 50vw;
+  max-width: 200px;
+}
+
 @media(max-width: 1000px){
   .centerandright{
     margin-left: 20px;
   }
 }
 
-@media (max-width: 550px){
+@media (max-width: 730px){
   .center{
     width: 95vw;
-    margin-left: 0px;
+    margin-left: 10px;
+
   }
   .centerandright{
     margin-left: 0px;
+  }
+  .center .top{
+    display: flex;
+    margin-bottom: 10px;
   }
 }
