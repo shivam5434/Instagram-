@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100%;
+  min-width: 100%;
+  background: #0C1014;
+  color: #ffffff;
+}
+
+.whole{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 16vw;
+  border-right: 1px solid #262626;
+  padding: 2em 1em 1em 0.7em;
+  position: fixed;
+  font-family: Poppins, 'Extra Light 200';
+}
+.top a{
+  font-family:Grand Hotel, cursive;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-left: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.middle{
+  margin-top: 30px;
+}
+
+.middle div{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 5px 0;
+  padding-left: 1em;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.middle div a{
+  display: flex;
+  align-items: center;
+  transition: background-color ease 50ms;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.middle div:hover{
+  background-color: #25282C;
+}
+
+.middle div a svg{
+  width: 40px;
+  padding-right: 15px;
+}
+
+.middle div a img{
+  height: 25px;
+  padding-right: 15px;
+}
+
+.bottom div{
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  height: 50px;
+  padding-left: 1em;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 9px;
+}
+
+.bottom div a{
+  display: flex;
+  align-items: center;
+  transition: background-color ease 50ms;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.bottom div:hover{
+  background-color: #25282C;
+}
+
+.bottom div a svg{
+  width: 40px;
+  padding-right: 15px;
+}
+
+.center{
+  padding: 0.25em;
+  width: 62%;
+}
+
+.centerandright{
+  width: 100%;
+  padding: 1rem;
+}
+
+.right{
+  width: 20%;
+}
+
+@media (max-width: 1100px){
+  .left{
+    width: 60px;
+    border-right: none;
+  }
+  .top a{
+    display: none;
+  }
+  .left div a span{
+    display: none;
+  }
+  .middle div:hover{
+    background-color: #0C1014;
+  }
+  
+}
+@media (max-width: 650px){
+  .left{
+    display: none;
+  }
+}

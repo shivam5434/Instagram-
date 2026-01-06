@@ -1,0 +1,161 @@
+.centerandright{
+  display: flex;
+  justify-content: center;
+  gap: min(9%, 100px);
+  margin-left: 16vw;
+  overflow: auto;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center{
+  max-width: calc(92*6px);
+  min-width: 400px;
+}
+
+.stories{
+  display: flex;
+  overflow: auto;
+  scrollbar-width: none;
+  margin-bottom: 20px;
+}
+
+.stories div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6px;
+}
+
+.stories div img{
+  height: 80px;
+  cursor: pointer;
+}
+.stories div span{
+  cursor: pointer;
+}
+
+.posts-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: calc(92*6px);
+  gap: 40px;
+}
+.posts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.top-bar{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-bottom: 8px;
+}
+
+.top-bar>:first-child{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.top-bar>:last-child{
+  display: flex;
+  gap: 10px;
+}
+
+.profile-pic>img{
+  height: 30px;
+}
+.usename-audio{
+  display: flex;
+  flex-direction: column;
+  font-size:0.8em;
+}
+
+.audio-used{
+  font-weight:lighter;
+}
+.top-right>a{
+  text-decoration: none;
+  color: #A3BCFF;
+}
+.top-right>a:hover{
+  text-decoration: underline;
+}
+.media{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+video{
+  border: 1px solid #262626;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.media>video{
+  width: 90%;
+}
+#MyAudio{
+  height: 20px;
+  width: 20px;
+  background: none #242425;
+  border: transparent;
+  border-radius: 30px;
+  position: absolute;
+  top: 97%;
+  right: 29px;
+  cursor: pointer;
+}
+#MyAudio>svg{
+  padding-top: 3px;
+}
+#MyAudio>:last-child{
+  display: none;
+  padding-left: 4px;
+}
+.response{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 2px 9px;
+}
+.like-comment-share{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#likebtn>:last-child{
+  display: none;
+}
+.like, .comment{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+.like button, .comment button, .share button, .save{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.description{
+  width: 85%;
+  font-size: 0.8em;
+}
+@media(max-width: 1000px){
+  .centerandright{
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 550px){
+  .center{
+    width: 95vw;
+    margin-left: 0px;
+  }
+  .centerandright{
+    margin-left: 0px;
+  }
+}
