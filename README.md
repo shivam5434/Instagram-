@@ -8,7 +8,7 @@ This project focuses on UI behavior and media interaction without any backend or
 ## 🌐 Live Demo
 
 👉 **Vercel Deployment:**  
-https://your-project-name.vercel.app
+https://instagram-ruddy-six.vercel.app/
 
 ---
 
